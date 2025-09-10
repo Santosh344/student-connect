@@ -1,0 +1,8 @@
+{
+  "name": "student-connect",
+  "private": true,
+  "scripts": {
+    "build": "cd client && npm ci && npm run build && cd .. && rm -rf server/public && mkdir -p server/public && cp -R client/dist/* server/public/",
+    "start": "node server/src/index.js"
+  }
+}
